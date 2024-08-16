@@ -9,7 +9,7 @@ A python application that allows the user to view and edit the chunk data of reg
 
 ## **What needs to be done:**
 - Short term
-  -~~Allow multiple files to be parsed sequentially~~ *Done - 16 Aug 2024. Memory optimization still needed*
+  -~~Allow multiple files to be parsed sequentially~~ *Done on 16 Aug 2024. Memory optimization still needed*
     - This would require disk read/writes as opposed to memory read/writes due to minecraft worlds having potentially extremely large file sizes.
   - Make parsed NBT data easier to read
 - Long term
