@@ -9,6 +9,7 @@ A python application that allows the user to view and edit the chunk data of reg
 > 17 Aug 2024
 - Cleaned up extract.py code and implemented memory optimization measures
 - Working on json formatting for chunk data
+  - Finished ✅ 
 - 
 ## **What needs to be done:**
 - Short term
