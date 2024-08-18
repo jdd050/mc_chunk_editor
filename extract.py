@@ -12,6 +12,7 @@ import io
 import re
 import os
 import sys
+import json
 
 class ExtractData:
     # Ask for file paths upon class initialization
@@ -79,7 +80,7 @@ class ExtractData:
                             decompressed_data = zlib.decompress(compressed_data[5:])
                             nbt_data = nbtlib.File.parse(io.BytesIO(decompressed_data)) # parse() expects an IO object
                             json_data = nbt_data.unpack(json=True)
-                            f.write(f"{json_data}")
+                            f.write(f"{json.dumps(json_data, indent=4)}")
                             f.close()
                         except zlib.error as e:
                             print(f"Decompression error: {e}")
